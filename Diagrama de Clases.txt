@@ -1,0 +1,47 @@
+﻿Clases Principales:
+* Usuario:
+   * Atributos Privados:
+      * id: string
+      * nombre: string
+      * relaciones: ListaDobleCircular
+   * Métodos Públicos:
+      * seguir(usuario: Usuario): void
+      * publicarMensaje(mensaje: Mensaje): void
+      * eliminarUsuario(): void
+* Mensaje:
+   * Atributos Privados:
+      * id: string
+      * contenido: string
+      * fechaHora: Date
+      * respuestas: ArbolBinario
+   * Métodos Públicos:
+      * agregarRespuesta(respuesta: Mensaje): void
+      * editarMensaje(nuevoContenido: string): void
+      * eliminarMensaje(): void
+* ListaDobleCircular:
+   * Atributos Privados:
+      * primerNodo: NodoListaDobleCircular
+   * Métodos Públicos:
+      * agregarNodo(usuario: Usuario): void
+      * eliminarNodo(usuario: Usuario): void
+* NodoListaDobleCircular:
+   * Atributos Privados:
+      * usuario: Usuario
+      * siguiente: NodoListaDobleCircular
+      * anterior: NodoListaDobleCircular
+* ArbolBinario:
+   * Atributos Privados:
+      * raiz: NodoArbolBinario
+   * Métodos Públicos:
+      * agregarNodo(respuesta: Mensaje): void
+      * eliminarNodo(respuesta: Mensaje): void
+* NodoArbolBinario:
+   * Atributos Privados:
+      * mensaje: Mensaje
+      * izquierdo: NodoArbolBinario
+      * derecho: NodoArbolBinario
+Consideraciones:
+* Estática o No Estática: Las clases representan instancias específicas y, por lo tanto, son no estáticas.
+* Atributos Públicos y Privados: Se han definido algunos atributos como privados (private) para limitar el acceso directo, mientras que los métodos públicos permiten la interacción controlada con estos atributos.
+* Git: Este diagrama de clases puede organizarse en un repositorio Git, preferiblemente en un archivo como "DiagramaDeClases.md" o similar.
+Recuerda personalizar este esquema según las necesidades específicas y ajustes que puedan surgir durante el desarrollo del proyecto.
