@@ -3,7 +3,8 @@
    * Atributos Privados:
       * id: string
       * nombre: string
-      * relaciones: ListaDobleCircular
+      * relaciones: ListaSimple
+ *  Pila cada pila va a tener un arbol que tienedatos y cada(cada dato es un mensaje)
    * Métodos Públicos:
       * seguir(usuario: Usuario): void
       * publicarMensaje(mensaje: Mensaje): void
@@ -13,12 +14,18 @@
       * id: string
       * contenido: string
       * fechaHora: Date
-      * respuestas: ArbolBinario
+    
    * Métodos Públicos:
-      * agregarRespuesta(respuesta: Mensaje): void
+      * agregarRespuesta(respuesta: Mensaje): void ----> DENTRO DE USUARIO (PARAMETROS DE LO QUE RECIBE) QUE RECIBA UN OBJ MENJS DONDE SE SEPA QUIEN ES EL PADRE
+-----> DENTRO DE CADA NODO PILA 
       * editarMensaje(nuevoContenido: string): void
       * eliminarMensaje(): void
-* ListaDobleCircular:
+* ListaDobleCircular: 
+GRAFO sE CREA UNA CLASE GRAFO VA A TENER UNA LISTA CIRCULAR DOBLE 
+SE TIENE QUE HACER UNA CLASE NODOGRAFO 
+
+
+
    * Atributos Privados:
       * primerNodo: NodoListaDobleCircular
    * Métodos Públicos:
@@ -30,6 +37,10 @@
       * siguiente: NodoListaDobleCircular
       * anterior: NodoListaDobleCircular
 * ArbolBinario:
+UN ROOOT DE TIPO NODO ARBOL 
+Y ESE NODO ARBOL TIENE UN OBJ DATO UN IZQ Y UN DERECHO 
+
+
    * Atributos Privados:
       * raiz: NodoArbolBinario
    * Métodos Públicos:
