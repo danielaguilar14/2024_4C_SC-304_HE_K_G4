@@ -45,3 +45,17 @@ o en ventanas. También sirve de lienzo.
 
 Graphics: clase abstracta que proporciona contextos gráficos
 donde dibujar cadenas de texto, líneas y otras formas sencillas.
+
+*****************************************************************
+COMO SE VA ACOMPORTAR Y SUS SUB MENUS 
+MENU PRINCIPAL AGREGAR ---> EXPLICAR QUE OPCIONES EL MENU VA ATENER,
+1. AGREAR USUARIO (me pide datos del usuario y de una vez pedir a quien quiere seguir en una lista) (nuevo nodo en la lista)
+2. ELIMINAR
+3. ELIMINAR SEGUIMIENTOS 
+4. VER FEET DE CUAL USUARIO?
+5. ELIMINAR SEGUIMIENTO 
+***************************************************************
+
+
+TENER EL CODIGO DE LOS TEMAS QUE YA VIMOS EN CLASES 
+TAREAS, CLASES,  MENU.
