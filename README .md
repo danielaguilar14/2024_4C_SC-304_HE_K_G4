@@ -182,6 +182,69 @@ Recuerda personalizar este esquema según las necesidades específicas y ajustes
 
 
 
+DISEÑO DE MENÚ E INTERFAZ DE USUARIO
+
+Para diseñar una GUI se investigarán las posibles maneras de generarla programando con Java.
+Para el diseño de esta GUI se tomará de referencia el diseño de la Red Social conocida como
+Twitter o X.
+
+Esta modalidad de interfaz de usuario es bastante simple y ha posibilitado enfocarse exclusivamente
+en los aspectos relacionados con la programación orientada a objetos utilizando el lenguaje Java. No se ha 
+tenido la necesidad de abordar simultáneamente la complejidad de trabajar con ventanas, botones y otros 
+elementos similares.
+
+Las interfaces gráficas de usuario (GUI) proporcionan al usuario ventanas, cuadros de diálogo, barras de
+herramientas, botones, listas desplegables y diversos elementos con los que ya estamos familiarizados.
+En este enfoque, las aplicaciones responden a eventos y se desarrollan haciendo uso de las clases
+proporcionadas por la API de Java diseñadas específicamente para este propósito. Este cambio nos permite
+crear aplicaciones más interactivas y amigables visualmente.
+
+La estructura fundamental de la biblioteca se centra en componentes y contenedores. Los contenedores albergan 
+componentes y, a su vez, son considerados componentes, permitiendo que los eventos sean manejados tanto en los
+contenedores como en los propios componentes.
+
+La API se compone de clases, interfaces y derivaciones, destacando las conocidas AWT y Swing como partes 
+fundamentales de esta suite de herramientas para el desarrollo de interfaces gráficas en entornos Java.
+
+
+Se utilizarán las siguientes clases con la siguiene jerarquía:
+
+Component: superclase de todas las clases de interfaz gráfica.
+
+Container: para agrupar componentes.
+
+JComponent: superclase de todos los componentes de Swing
+que se dibujan directamente en los lienzos (canvas).
+Sus subclases son los elementos básicos de la GUI.
+
+JFrame: ventana que no está contenida en otras ventanas.
+
+JDialog: cuadro de diálogo.
+
+JApplet: subclase de Applet para crear applets tipo Swing.
+
+JPanel: contenedor invisible que mantiene componentes
+de interfaz y que se puede anidar, colocándose en otros paneles
+o en ventanas. También sirve de lienzo.
+
+Graphics: clase abstracta que proporciona contextos gráficos
+donde dibujar cadenas de texto, líneas y otras formas sencillas.
+
+*****************************************************************
+COMO SE VA ACOMPORTAR Y SUS SUB MENUS 
+MENU PRINCIPAL AGREGAR ---> EXPLICAR QUE OPCIONES EL MENU VA ATENER,
+1. AGREAR USUARIO (me pide datos del usuario y de una vez pedir a quien quiere seguir en una lista) (nuevo nodo en la lista)
+2. ELIMINAR
+3. ELIMINAR SEGUIMIENTOS 
+4. VER FEET DE CUAL USUARIO?
+5. ELIMINAR SEGUIMIENTO 
+***************************************************************
+
+
+TENER EL CODIGO DE LOS TEMAS QUE YA VIMOS EN CLASES 
+TAREAS, CLASES,  MENU.
+
+
 
 
 
