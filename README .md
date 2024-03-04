@@ -120,5 +120,68 @@ Encargado: Jose Daniel Gomez Diaz
 CADA PERSONA SEGUN CLASE, Y LOS METODOS SEGUN EL DIAGRAMA.
 
 
+﻿Clases Principales:
+* Usuario:
+   * Atributos Privados:
+      * id: string
+      * nombre: string
+      * relaciones: ListaSimple
+ *  Pila cada pila va a tener un arbol que tienedatos y cada(cada dato es un mensaje)
+   * Métodos Públicos:
+      * seguir(usuario: Usuario): void
+      * publicarMensaje(mensaje: Mensaje): void
+      * eliminarUsuario(): void
+* Mensaje:
+   * Atributos Privados:
+      * id: string
+      * contenido: string
+      * fechaHora: Date
+    
+   * Métodos Públicos:
+      * agregarRespuesta(respuesta: Mensaje): void ----> DENTRO DE USUARIO (PARAMETROS DE LO QUE RECIBE) QUE RECIBA UN OBJ MENJS DONDE SE SEPA QUIEN ES EL PADRE
+-----> DENTRO DE CADA NODO PILA 
+      * editarMensaje(nuevoContenido: string): void
+      * eliminarMensaje(): void
+* ListaDobleCircular: 
+GRAFO sE CREA UNA CLASE GRAFO VA A TENER UNA LISTA CIRCULAR DOBLE 
+SE TIENE QUE HACER UNA CLASE NODOGRAFO 
+
+
+
+   * Atributos Privados:
+      * primerNodo: NodoListaDobleCircular
+   * Métodos Públicos:
+      * agregarNodo(usuario: Usuario): void
+      * eliminarNodo(usuario: Usuario): void
+* NodoListaDobleCircular:
+   * Atributos Privados:
+      * usuario: Usuario
+      * siguiente: NodoListaDobleCircular
+      * anterior: NodoListaDobleCircular
+* ArbolBinario:
+UN ROOOT DE TIPO NODO ARBOL 
+Y ESE NODO ARBOL TIENE UN OBJ DATO UN IZQ Y UN DERECHO 
+
+
+   * Atributos Privados:
+      * raiz: NodoArbolBinario
+   * Métodos Públicos:
+      * agregarNodo(respuesta: Mensaje): void
+      * eliminarNodo(respuesta: Mensaje): void
+* NodoArbolBinario:
+   * Atributos Privados:
+      * mensaje: Mensaje
+      * izquierdo: NodoArbolBinario
+      * derecho: NodoArbolBinario
+Consideraciones:
+* Estática o No Estática: Las clases representan instancias específicas y, por lo tanto, son no estáticas.
+* Atributos Públicos y Privados: Se han definido algunos atributos como privados (private) para limitar el acceso directo, mientras que los métodos públicos permiten la interacción controlada con estos atributos.
+* Git: Este diagrama de clases puede organizarse en un repositorio Git, preferiblemente en un archivo como "DiagramaDeClases.md" o similar.
+Recuerda personalizar este esquema según las necesidades específicas y ajustes que puedan surgir durante el desarrollo del proyecto.
+
+
+
+
+
 
 
