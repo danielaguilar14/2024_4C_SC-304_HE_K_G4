@@ -60,17 +60,8 @@ Desarrollar una plataforma de red social donde se permite a los ususarios compar
   Implementar la eliminación de usuarios y la eliminación de sus mensajes y relaciones de seguimiento.
   Responsable: 
 
-   Primer Avance del Proyecto de Investigación
 
-Profesor: MSc. José Andrés Alvarado Moreira 
 
-Integrantes del grupo #4: 
-Aguilar Aguilar Jose Daniel
-Baltodano Obregón María José 
-Gomez Diaz Jose Daniel
-
-Fecha de entrega:
-26-02-2024
 
 ● Plan de proyecto de investigación 
 - Desarrollo de plataforma de red social para la empresa el "Pajarito Feliz"
@@ -173,6 +164,7 @@ Y ESE NODO ARBOL TIENE UN OBJ DATO UN IZQ Y UN DERECHO
       * mensaje: Mensaje
       * izquierdo: NodoArbolBinario
       * derecho: NodoArbolBinario
+      * 
 Consideraciones:
 * Estática o No Estática: Las clases representan instancias específicas y, por lo tanto, son no estáticas.
 * Atributos Públicos y Privados: Se han definido algunos atributos como privados (private) para limitar el acceso directo, mientras que los métodos públicos permiten la interacción controlada con estos atributos.
@@ -199,39 +191,58 @@ En este enfoque, las aplicaciones responden a eventos y se desarrollan haciendo 
 proporcionadas por la API de Java diseñadas específicamente para este propósito. Este cambio nos permite
 crear aplicaciones más interactivas y amigables visualmente.
 
-La estructura fundamental de la biblioteca se centra en componentes y contenedores. Los contenedores albergan 
-componentes y, a su vez, son considerados componentes, permitiendo que los eventos sean manejados tanto en los
-contenedores como en los propios componentes.
+Nos centraremos en crear una interfaz grafica sencilla que imprima toda la informacion a traves de JOptionPane 
+y tambien en la consola. Esto lo haremos a traves de un do while Switch case para mantener la simplicidad y centrarnos 
+en la funcionalidad del programa. 
 
-La API se compone de clases, interfaces y derivaciones, destacando las conocidas AWT y Swing como partes 
-fundamentales de esta suite de herramientas para el desarrollo de interfaces gráficas en entornos Java.
+se utilizara la siguiente estructura:
+
+        int opcion;
+
+        do {
+            String opcionStr = JOptionPane.showInputDialog("Selecciona una opción:\n"
+                    + "1. Opción 1\n"
+                    + "2. Opción 2\n"
+                    + "3. Opción 3\n"
+                    + "4. Opción 4\n"
+                    + "5. Salir");
+
+            opcion = Integer.parseInt(opcionStr);
+
+            switch (opcion) {
+                case 1:
+                    JOptionPane.showMessageDialog(null, "Seleccionaste la Opción 1");
+                    break;
+
+                case 2:
+                    JOptionPane.showMessageDialog(null, "Seleccionaste la Opción 2");
+                    break;
+
+                case 3:
+                    JOptionPane.showMessageDialog(null, "Seleccionaste la Opción 3");
+                    break;
+
+                case 4:
+                    JOptionPane.showMessageDialog(null, "Seleccionaste la Opción 4");
+                    break;
+
+                case 5:
+                    JOptionPane.showMessageDialog(null, "Saliendo del programa");
+                    break;
+
+                default:
+                    JOptionPane.showMessageDialog(null, "Opción inválida. Por favor, selecciona una opción válida.");
+                    break;
+            }
+
+        } while (opcion != 5);
+    }
+}
 
 
-Se utilizarán las siguientes clases con la siguiene jerarquía:
-
-Component: superclase de todas las clases de interfaz gráfica.
-
-Container: para agrupar componentes.
-
-JComponent: superclase de todos los componentes de Swing
-que se dibujan directamente en los lienzos (canvas).
-Sus subclases son los elementos básicos de la GUI.
-
-JFrame: ventana que no está contenida en otras ventanas.
-
-JDialog: cuadro de diálogo.
-
-JApplet: subclase de Applet para crear applets tipo Swing.
-
-JPanel: contenedor invisible que mantiene componentes
-de interfaz y que se puede anidar, colocándose en otros paneles
-o en ventanas. También sirve de lienzo.
-
-Graphics: clase abstracta que proporciona contextos gráficos
-donde dibujar cadenas de texto, líneas y otras formas sencillas.
 
 *****************************************************************
-COMO SE VA ACOMPORTAR Y SUS SUB MENUS 
+COMO SE VA A COMPORTAR Y SUS SUB MENUS 
 MENU PRINCIPAL AGREGAR ---> EXPLICAR QUE OPCIONES EL MENU VA ATENER,
 1. AGREAR USUARIO (me pide datos del usuario y de una vez pedir a quien quiere seguir en una lista) (nuevo nodo en la lista)
 2. ELIMINAR
